@@ -1,0 +1,31 @@
+{
+  "_moduleAliases": {
+    "@mars_modules": "./mars_modules/index.js",
+    "@init_modules": "./mars_modules/init_modules.js",
+    "@mars_fs": "./mars_fs",
+    "@prepare_express": "./mars_modules/node_specific/prepare_express.js"
+  },
+  "name": "nodejsexpo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "dayjs": "^1.11.6",
+    "dns-sync": "^0.2.1",
+    "express": "^4.17.3",
+    "fcm-node": "^1.6.1",
+    "module-alias": "^2.2.2",
+    "nodemailer": "^6.8.0",
+    "sync-mysql": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}

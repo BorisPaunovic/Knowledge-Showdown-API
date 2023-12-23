@@ -1,0 +1,125 @@
+function email(email) {
+   const re = new RegExp('^(([^<>()[\\]\\\\.,;:\\s@"]+(\\.[^<>()[\\]\\\\.,;:\\s@"]+)*)|(".+"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$');
+
+
+  if (re.test(String(email).toLowerCase())) {
+    return "";
+  } else {
+    return "Please enter a valid email address";
+  }
+}
+function password(password) {
+  const re = new RegExp('^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&.])[A-Za-z\\d@$!%*#?&.]{8,30}$');
+
+  //Minimum eight characters, maximum 30 characters, at least one letter, one number and one special character:
+  if (re.test(password)) {
+    return "";
+  } else {
+    return "must contain at least one letter, one number and one special character and must be 8-30 characters long";
+  }
+}
+function name(name) {
+  const re = new RegExp("^[a-zA-Z0-9-' ]+$");
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(name) && name.trim().length > 1 && name.trim().length <= 30) {
+    return "";
+  } else {
+    return `can contain a-z, A-Z, 0-9, " ", ' and must be 2-30 characters long`;
+  }
+}
+function username(username) {
+  const re = new RegExp("^[a-zA-Z0-9_'\-]{2,15}$");
+
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(username)) {
+    return "";
+  } else {
+    return `can contain a-z, A-Z, 0-9,', "-", "_" and must be 2-15 characters long`;
+  }
+}
+
+function about(about) {
+ const re = new RegExp("^[-'A-Za-z0-9 .,:;!@#$%^&*()_+={}\\[\\]|<>/~\\\\?\"'\\n]+$");
+ 
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(about) && about.length < 300) {
+    return "";
+  } else {
+    return "can't contain special characters and must be below 300 characters";
+  }
+}
+
+function answer(answer) {
+ const re = new RegExp("^[-'A-Za-z0-9 .,:;!@#$%^&*()_+={}\\[\\]|<>/~\\\\?\"'\\n]+$");
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(answer) && answer.length < 200) {
+    return "";
+  } else {
+    return "can't contain special characters and must be below 200 characters";
+  }
+}
+
+function question(question) {
+  const re = new RegExp("^[-'A-Za-z0-9 .,:;!@#$%^&*()_+={}\\[\\]|<>/~\\\\?\"'\\n]+$");
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(question) && question.length < 200) {
+    return "";
+  } else {
+    return "can't contain special characters and must be below 200 characters";
+  }
+}
+
+function cat_name(question) {
+  const re = new RegExp("^[-'A-Za-z0-9 .,:;!@#$%^&*()_+={}\\[\\]|<>/~\\\\?\"'\\n]+$");
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(question) && question.length < 50) {
+    return "";
+  } else {
+    return "can't contain special characters and must be below 50 characters";
+  }
+}
+
+function cat_description(question) {
+  const re = new RegExp("^[-'A-Za-z0-9 .,:;!@#$%^&*()_+={}\\[\\]|<>/~\\\\?\"'\\n]+$");
+  //only contains letters, numbers, spaces, hyphens, and apostrophes,
+  if (re.test(question) && question.length < 400) {
+    return "";
+  } else {
+    return "can't contain special characters and must be below 400 characters";
+  }
+}
+function checkImage(checkImage) {
+  
+   if(checkImage.fileName == null)
+   {
+    return "Not a image";
+   }
+  if (checkImage) {
+    if( checkImage.fileName.toLowerCase().endsWith('.png') ||checkImage.fileName.toLowerCase().endsWith('.jpg')||checkImage.fileName.toLowerCase().endsWith('.jpeg'))
+    {
+        return "";
+    }
+    else
+    {
+         return "Can only accept .png, .jpg, .jpeg files";
+    }
+    return "";
+  } else {
+   return "Empty image";
+  }
+}
+
+
+
+exports.email = email;
+exports.password = password;
+exports.name = name;
+exports.username = username;
+exports.about = about;
+exports.answer = answer;
+exports.question = question;
+exports.cat_name = cat_name;
+exports.cat_description = cat_description;
+exports.checkImage= checkImage;
+
+

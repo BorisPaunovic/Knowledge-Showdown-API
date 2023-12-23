@@ -1,0 +1,29 @@
+ /*
+  var user_data = session('user'); // ovo sam stavila gore sboz scopa, na liniji sad vec 19 je bacao error, 
+ //da je user_data undefined
+
+function validateUserSession()
+{
+write("user data", user_data)
+if(user_data === null){
+  write('message', 'user not logged in');
+  exit();
+}
+
+}
+
+function validateUserPrivileges()
+{
+ //ova provera nam ne valja jer ce uvek biti "You don't have rights...", npr Ana jeste Super Admin ali nije admin,
+//  ovo dole nam govori da je ce izaci error u bilo kom od ovih slucajeva
+ 
+// if(user_data.rol_name !== "Super Admin"|| user_data.rol_name !== "Admin" || user_data.usr_id === usr_id){
+//   write("msg", "You don't have rights to perform this action")
+//   response.status(403)  
+//   exit();
+// }
+}
+
+exports.validateUserSession = validateUserSession;
+exports.validateUserPrivileges = validateUserPrivileges;
+*/

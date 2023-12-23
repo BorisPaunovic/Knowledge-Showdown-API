@@ -1,0 +1,33 @@
+
+
+var user_data = session("user");
+
+
+function checkIsLoggedIn()
+{
+if(user_data === null)
+{
+    response.status(401);
+ write('LoginMessage','User not logged in');
+ exit();
+}
+
+}
+
+
+function checkPermissions(per_id) {
+  for (let i = 0; i < user_data.permissions.length; i++) {
+    if (user_data.permissions[i].per_id === per_id) {
+      return true; 
+    }
+  }
+  write("UserAllMessage", "You don't have rights to perform this action");
+  response.status(403);
+ exit();
+
+}
+
+
+exports.checkIsLoggedIn = checkIsLoggedIn;
+exports.checkPermissions=checkPermissions;
+
