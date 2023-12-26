@@ -33,7 +33,7 @@ To set up the Knowledge Showdown API on your local machine, follow these steps:
 
 ## Usage
 
-The Knowledge Showdown API provides a set of powerful endpoints to interact with the Knowledge Showdown Database. Familiarize yourself with the API's capabilities to seamlessly integrate it into your applications.
+The Knowledge Showdown API provides a set of powerful endpoints to interact with the Knowledge Showdown Database.
 
 ## Endpoints
 
