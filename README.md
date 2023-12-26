@@ -17,6 +17,10 @@ Welcome to the Knowledge Showdown API repository! This Node.js-based RESTful API
 
 The Knowledge Showdown API enables seamless communication with the Knowledge Showdown Database, allowing you to efficiently control and manipulate data related to avatars, countries, average scores, categories, questions, users, games, responses, answers, roles, and permissions. The API is designed to facilitate the integration of the Knowledge Showdown system into your applications.
 
+
+![FireShot Capture 003 - SwaggerEditor - editor-next swagger io](https://github.com/BorisPaunovic/Knowledge-Showdown-API/assets/119711363/8e4d445d-ffbf-4a3d-aaee-471c8e3ef7a6)
+
+
 ## Setup
 
 To set up the Knowledge Showdown API on your local machine, follow these steps:
