@@ -1,6 +1,6 @@
 # Knowledge Showdown API
 
-### NOTE This API is originaly written for ![Mars Engine](https://mars-server.net/)
+### NOTE This API is originaly written for [Mars Engine](https://mars-server.net/)
 
 Welcome to the Knowledge Showdown API repository! This Node.js-based RESTful API, originally written in the Mars Engine (JavaScript) and then exported to Node.js, serves as a robust control interface for managing data within the Knowledge Showdown Database.
 
