@@ -20,7 +20,7 @@ Welcome to the Knowledge Showdown API repository! This Node.js-based RESTful API
 The Knowledge Showdown API enables seamless communication with the Knowledge Showdown Database, allowing you to efficiently control and manipulate data related to avatars, countries, average scores, categories, questions, users, games, responses, answers, roles, and permissions. The API is designed to facilitate the integration of the Knowledge Showdown system into your applications.
 
 
-![FireShot Capture 003 - SwaggerEditor - editor-next swagger io](https://github.com/BorisPaunovic/Knowledge-Showdown-API/assets/119711363/8e4d445d-ffbf-4a3d-aaee-471c8e3ef7a6)
+
 
 
 ## Setup
@@ -39,59 +39,7 @@ The Knowledge Showdown API provides a set of powerful endpoints to interact with
 
 ## Endpoints
 
-### Avatars
-- `GET /avatars`: Retrieve avatar images and associated data.
-
-### Countries
-- `GET /countries`: Retrieve information about countries.
-
-### Average Scores
-- `GET /average-scores`: Retrieve average scores data.
-
-### Categories Questions
-- `GET /categories-questions`: Retrieve data connecting categories and questions.
-
-### Users
-- `GET /users`: Retrieve information about users, including unique IDs, names, and contact details.
-- `POST /users`: Create a new user.
-- `PUT /users/:id`: Update user information.
-- `DELETE /users/:id`: Delete a user.
-
-### Categories
-- `GET /categories`: Retrieve information about knowledge categories.
-
-### Questions
-- `GET /questions`: Retrieve details about questions, including question IDs and text.
-
-### Games
-- `GET /games`: Retrieve information about games and their details.
-- `POST /games`: Create a new game.
-- `PUT /games/:id`: Update game information.
-- `DELETE /games/:id`: Delete a game.
-
-### Responses
-- `GET /responses`: Retrieve responses to questions.
-
-### Answers
-- `GET /answers`: Retrieve information about answers to questions.
-
-### Users Roles
-- `GET /users-roles`: Retrieve data connecting users and roles.
-
-### Games Questions
-- `GET /games-questions`: Retrieve data connecting games and questions.
-
-### Roles Permissions
-- `GET /roles-permissions`: Retrieve data connecting roles and permissions.
-
-### Roles
-- `GET /roles`: Retrieve information about user roles.
-
-### Users Permissions
-- `GET /users-permissions`: Retrieve data connecting users and permissions.
-
-### Permissions
-- `GET /permissions`: Retrieve information about user permissions.
+![FireShot Capture 003 - SwaggerEditor - editor-next swagger io](https://github.com/BorisPaunovic/Knowledge-Showdown-API/assets/119711363/8e4d445d-ffbf-4a3d-aaee-471c8e3ef7a6)
 
 ## Contributing
 
